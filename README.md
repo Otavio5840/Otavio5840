@@ -34,41 +34,46 @@
         border-radius: 5px;
         background-color: #f3f3f3;
     }
-    .calculator input {
+    .calculator input[type="button"] {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .calculator input[type="text"] {
         width: 100%;
         margin-bottom: 10px;
         padding: 10px;
         box-sizing: border-box;
-        font-size: 18px;
-    }
-    .calculator button {
-        width: 48%;
-        padding: 10px;
-        font-size: 18px;
-        margin-top: 5px;
-        cursor: pointer;
+        font-size: 24px;
+        text-align: right;
     }
 </style>
 </head>
 <body>
     <div class="calculator">
         <input type="text" id="display" disabled>
-        <button onclick="addToDisplay('7')">7</button>
-        <button onclick="addToDisplay('8')">8</button>
-        <button onclick="addToDisplay('9')">9</button>
-        <button onclick="addToDisplay('+')">+</button>
-        <button onclick="addToDisplay('4')">4</button>
-        <button onclick="addToDisplay('5')">5</button>
-        <button onclick="addToDisplay('6')">6</button>
-        <button onclick="addToDisplay('-')">-</button>
-        <button onclick="addToDisplay('1')">1</button>
-        <button onclick="addToDisplay('2')">2</button>
-        <button onclick="addToDisplay('3')">3</button>
-        <button onclick="addToDisplay('*')">*</button>
-        <button onclick="addToDisplay('0')">0</button>
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="calculate()">=</button>
-        <button onclick="addToDisplay('/')">/</button>
+        <br>
+        <input type="button" value="7" onclick="addToDisplay('7')">
+        <input type="button" value="8" onclick="addToDisplay('8')">
+        <input type="button" value="9" onclick="addToDisplay('9')">
+        <input type="button" value="+" onclick="addToDisplay('+')">
+        <br>
+        <input type="button" value="4" onclick="addToDisplay('4')">
+        <input type="button" value="5" onclick="addToDisplay('5')">
+        <input type="button" value="6" onclick="addToDisplay('6')">
+        <input type="button" value="-" onclick="addToDisplay('-')">
+        <br>
+        <input type="button" value="1" onclick="addToDisplay('1')">
+        <input type="button" value="2" onclick="addToDisplay('2')">
+        <input type="button" value="3" onclick="addToDisplay('3')">
+        <input type="button" value="*" onclick="addToDisplay('*')">
+        <br>
+        <input type="button" value="0" onclick="addToDisplay('0')">
+        <input type="button" value="C" onclick="clearDisplay()">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="/" onclick="addToDisplay('/')">
     </div>
 
     <script>
@@ -91,3 +96,4 @@
     </script>
 </body>
 </html>
+
