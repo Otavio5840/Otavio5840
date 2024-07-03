@@ -9,7 +9,8 @@
 </head>
 <body>
     <h1>Minha Primeira Página</h1>
-    <p>Meu nome é Otávio e esta é minha primeira página HTML.</p>
+    <p>Meu nome é Otávio e esta é minha primeira página HTML, gosto de estudar coisas novas,acho que não conheço ninguém com 11 anos que já se aventura por ai aprendendo essas coisas.
+        minha primeira impressão era que isso ia ser muito dificil mas não achei mt legal.</p>
 </body>
 </html>
 
