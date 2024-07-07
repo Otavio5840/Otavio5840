@@ -77,23 +77,36 @@
     </div>
 
     <script>
+        // Função para adicionar valores ao display
         function addToDisplay(value) {
-            document.getElementById('display').value += value;
+            // Verificar se o display está desativado e ativá-lo
+            let display = document.getElementById('display');
+            if (display.disabled) {
+                display.disabled = false;
+            }
+            // Adicionar valor ao display
+            display.value += value;
         }
 
+        // Função para limpar o display
         function clearDisplay() {
-            document.getElementById('display').value = '';
+            let display = document.getElementById('display');
+            display.value = '';
         }
 
+        // Função para calcular a expressão no display
         function calculate() {
             let display = document.getElementById('display');
             try {
+                // Calcular a expressão e exibir o resultado
                 display.value = eval(display.value);
             } catch(error) {
+                // Exibir erro em caso de expressão inválida
                 display.value = 'Error';
             }
         }
     </script>
 </body>
 </html>
+
 
